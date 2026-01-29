@@ -1,0 +1,13 @@
+{
+  "ruta_proyecto": ".",
+  "archivo_salida": "documentacion.docx",
+  "excluir_dirs": [
+    ".git", ".hg", ".svn", "__pycache__", "node_modules",
+    "dist", "build", ".venv", "venv", ".mypy_cache", ".pytest_cache"
+  ],
+  "colores": {
+    "con_doc": [0, 102, 204],
+    "sin_doc": [255, 0, 0]
+  },
+  "incluir_paquete_propio": false    
+}
