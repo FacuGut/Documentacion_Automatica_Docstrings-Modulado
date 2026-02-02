@@ -23,7 +23,7 @@ Su objetivo es facilitar el mantenimiento documental sin necesidad de editar man
 Instalación:
 
 ```bash
-pip install python-docx
+pip install python-docx```
 
 ---
 
