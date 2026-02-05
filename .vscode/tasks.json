@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Documentar proyecto (DocuRunner)",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"app.main",
+				"${workspaceFolder}",
+				"-o",
+				"${workspaceFolder}/documentacion.docx"
+			],
+			"isBackground": false
+		}
+	]
+}
