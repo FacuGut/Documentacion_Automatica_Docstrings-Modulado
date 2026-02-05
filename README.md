@@ -31,42 +31,10 @@ pip install python-docx
 
 ## **Ejecucion**
 1. Clonar el repositorio en tu equipo
-2. Instalar dependencia python-docx
-3. Abrir Visual Studio Code y presionar Ctrl + Shift + P dentro para crear una task 
-4. Seleccionar la opción "Open User Tasks", esto abrirá el archivo tasks.json
-5. Pegar el siguiente contenido dentro de tasks.json y reemplazar solo los valores PATH en "cwd" y "PYTHONPATH" por la ruta de la carpeta donde tengas este script clonado y los workspaceFolder por la ruta de el proyecto a documentar
+2. Instalar la dependencia python-docx en este proyecto 
+3. Abrir el proyecto a documentar 
+4. Poner en la consola del proyecto a documentar el siguiente comando y reemplazar "PATH" por la ruta de la raiz de DocuRunner (este proyecto)
 ```bash
-{
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Documentar proyecto (DocuRunner)",
-      "type": "shell",
-      "command": "python",
-      "args": [
-        "-m",
-        "app.main",
-        "${workspaceFolder}",
-        "-o",
-        "${workspaceFolder}/documentacion.docx"
-      ],
-      "options": {
-        "cwd": "PATH",
-        "env": {
-          "PYTHONPATH": "PATH"
-        }
-      },
-      "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "panel": "shared"
-      },
-      "problemMatcher": []
-    }
-  ]
-}
+powershell -ExecutionPolicy Bypass -File "PATH\docurunner.ps1"
 ```
-7. En el proyecto a documentar ejecutar la task presionando Ctrl + Shift + P → Tasks: Run Task → Documentar proyecto (DocuRunner)
-
----
-
+Ejemplo: powershell -ExecutionPolicy Bypass -File "C:\Users\jmartinez\Desktop\Proyectos\Automatizacion\docurunner.ps1"
