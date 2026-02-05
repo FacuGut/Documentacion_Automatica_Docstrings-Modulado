@@ -16,8 +16,6 @@ Su objetivo es facilitar el mantenimiento documental sin necesidad de editar man
 ---
 
 ##  **Requisitos**
-
-- **Python 3.10 o superior**
 - Librería **python-docx**
 
 Instalación:
