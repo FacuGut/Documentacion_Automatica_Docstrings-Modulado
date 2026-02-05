@@ -32,9 +32,9 @@ pip install python-docx
 ## **Ejecucion**
 1. Clonar el repositorio en tu equipo
 2. Instalar dependencia python-docx
-3. Abrir Visual Studio Code y presionar Ctrl + Shift + P dentro de la carpeta docrunner para crear una task 
+3. Abrir Visual Studio Code y presionar Ctrl + Shift + P dentro para crear una task 
 4. Seleccionar la opción "Open User Tasks", esto abrirá el archivo tasks.json
-5. Pegar el siguiente contenido dentro de tasks.json y reemplazar los valores PATH por la ruta donde tengas este proyecto
+5. Pegar el siguiente contenido dentro de tasks.json y reemplazar solo los valores PATH en "cwd" y "PYTHONPATH" por la ruta de la carpeta donde tengas este script clonado y los workspaceFolder por la ruta de el proyecto a documentar
 ```bash
 {
   "version": "2.0.0",
